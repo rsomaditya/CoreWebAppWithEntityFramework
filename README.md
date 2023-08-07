@@ -6,7 +6,7 @@ C. Test API using POSTMAN</b>
 
 <b>A) First, Entity Framework Implementation:</b>
 
-1. create new project, template: ASP.NET Core Web App MVC
+1. create new project with solution name 'CoreWebAppWithEF', choose template 'ASP.NET Core Web App MVC'
 2. Install following packages from nuget package manager:\
      a) Microsoft.EntityFramework.Core (7.0.9)\
      b) Microsoft.EntityFramework.Core.SqlServer (7.0.9)\
