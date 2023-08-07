@@ -3,7 +3,7 @@ Its a Dotnet Core(6) WEB API project using Entity Framework(7) and MS SQL Server
 A. Implementing Entity Framework
 B. Implementing Web API.
 
-A) First Implementing of Entity Framework
+A) First, Entity Framework Implementation
 
 1. create new project, template: ASP.NET Core Web App MVC
 2. Install following packages from nuget package manager:
