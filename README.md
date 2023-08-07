@@ -29,4 +29,5 @@ B) Web API Implementation:
 
 1. Add a new API controller class 'CandidateController.cs' in 'Controllers' folder and choose the read/write option to get all the http CRUD methods easily.
 2. Implement the controller for each actions using DB Context class's ('LmsContext.cs') object. Here for all WRITE operation with DB, SaveChanges() shall is been called.
-3. Once the CandidateController is been implemented rebuild the project and run it.
+3. Add "launchUrl": "Candidate" in 'launchsettings.json' under 'profiles.CoreWebAppWithEF' and 'profiles.IIS Express' both.
+4. Once the CandidateController is been implemented rebuild the project and run it.
