@@ -1,9 +1,10 @@
 # CoreWebAppWithEF
-Its a Dotnet Core(6) WEB API project using Entity Framework(7) and MS SQL Server(2019). This project is diveided in to two parts:
+Its a Dotnet Core(6) WEB API project using Entity Framework(7) and MS SQL Server(2019). This project is diveided in to three parts:
 A. Implementing Entity Framework
 B. Implementing Web API.
+C. Test API using POSTMAN
 
-A) First, Entity Framework Implementation
+A) First, Entity Framework Implementation:
 
 1. create new project, template: ASP.NET Core Web App MVC
 2. Install following packages from nuget package manager:
@@ -24,4 +25,8 @@ A) First, Entity Framework Implementation
 10. Run 'update-database' in the Package Manager console to execute generated migration files in order to update the physical Database.
 11. Oncec its done, check in SSMS that the new DB along with the table has been created.
 
+B) Web API Implementation:
 
+1. Add a new API controller class 'CandidateController.cs' in 'Controllers' folder and choose the read/write option to get all the http CRUD methods easily.
+2. Implement the controller for each actions using DB Context class's ('LmsContext.cs') object. Here for all WRITE operation with DB, SaveChanges() shall is been called.
+3. Once the CandidateController is been implemented rebuild the project and run it.
