@@ -31,3 +31,47 @@ C. Test API using POSTMAN</b>
 2. Implement the controller for each actions using DB Context class's ('LmsContext.cs') object. Here for all WRITE operation with DB, SaveChanges() shall is been called.
 3. Add "launchUrl": "Candidate" in 'launchsettings.json' under 'profiles.CoreWebAppWithEF' and 'profiles.IIS Express' both.
 4. Once the CandidateController is been implemented rebuild the project and run it.
+
+<b>C) Test API using POSTMAN</b>
+Open the Postman Tool. Since my Web API is running at port 7031 with HTTPS protocol, API call URLs will be:
+
+<b>GET:</b> 
+https://localhost:7031/api/Candidate 
+
+<b>POST:
+</b> https://localhost:7031/api/Candidate
+</br>Resquest Body(json):\
+{
+"metadate": "{{datetime}}",
+"candidatename": "{{string}}",
+"dateofbirth": "{{datetime}}",
+"gender": "{{string}}",
+"AddressLine1": "{{string}}",
+"AddressLine2": "{{string}}",
+"Zip": {{int}},
+"City": "{{string}}",
+"State": "{{string}}",
+"Country": "{{string}}",
+"streamid": "{{string}}"
+}
+
+<b>PUT:</b> 
+https://localhost:7031/api/Candidate/{id}
+</br>Resquest Body(json):\
+{
+"metaid":{{int}},
+"metadate": "{{datetime}}",
+"candidatename": "{{string}}",
+"dateofbirth": "{{datetime}}",
+"gender": "{{string}}",
+"AddressLine1": "{{string}}",
+"AddressLine2": "{{string}}",
+"Zip": {{int}},
+"City": "{{string}}",
+"State": "{{string}}",
+"Country": "{{string}}",
+"streamid": "{{string}}"
+}
+
+<b>DELETE:</b> 
+https://localhost:7031/api/Candidate/{id}
