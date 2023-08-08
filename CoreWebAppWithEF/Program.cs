@@ -1,11 +1,15 @@
 using CoreWebAppWithEF.Context;
+using CoreWebAppWithEF.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+//Add SQL server db provider for EF Core
 builder.Services.AddDbContext<LmsContext>(options=>options.UseSqlServer(builder.Configuration.GetConnectionString("DbLMS")));
+//Add repository’s dependency
+builder.Services.AddTransient<InterfaceCandidateRepo, CandidateRepo>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
