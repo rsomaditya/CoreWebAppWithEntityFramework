@@ -37,6 +37,8 @@ D. Test API using POSTMAN</b>
 1. Add a new folder named 'Repository' the add an Interface name 'InterfaceCandidateRepo.cs' in that folder. Add the methods in the interface that performs CRUD operations for Candidate microservice.
 2. Add a concrete class named 'CandidateRepo.cs' in the 'Repository' folder to implement all the abstract CRUD methods of 'InterfaceCandidateRepo' interface. Add the implementation for the methods via accessing 'LmsContext' methods.
 3. Once done, add 'builder.Services.AddTransient<InterfaceCandidateRepo, CandidateRepo>()' to dependency injection of repository.
+4. <b>Add new Web API controller class 'CandidateMicroserviceController.cs'</b> under 'Controller' folder. We want both API to run separately.Implement the new controller for each actions using 'CandidateRepo' object.
+5. Once, this done rebuild and re migrate the project as previous.
 
 <b>D) Test API using POSTMAN:</b>
 
