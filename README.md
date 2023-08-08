@@ -45,14 +45,13 @@ D. Test API using POSTMAN</b>
 Open the Postman Tool. Since my Web API is running at port 7031 with HTTPS protocol, API call URLs will be:
 
 <b>GET:</b> 
-CandidateController: https://localhost:7031/api/Candidate 
-CandidateMicroserviceController: https://localhost:7031/api/CandidateMicroservice 
+</br>CandidateController: https://localhost:7031/api/Candidate 
+</br>CandidateMicroserviceController: https://localhost:7031/api/CandidateMicroservice 
 
 <b>POST:</b> 
-CandidateController: https://localhost:7031/api/Candidate
-CandidateMicroserviceController: https://localhost:7031/api/CandidateMicroservice 
-
-</br>Resquest Body(json):\
+</br>CandidateController: https://localhost:7031/api/Candidate
+</br>CandidateMicroserviceController: https://localhost:7031/api/CandidateMicroservice 
+</br><i>Resquest Body(json):\
 {
 "metadate": "{{datetime}}",
 "candidatename": "{{string}}",
@@ -65,12 +64,12 @@ CandidateMicroserviceController: https://localhost:7031/api/CandidateMicroservic
 "State": "{{string}}",
 "Country": "{{string}}",
 "streamid": "{{string}}"
-}
+}</i>
 
 <b>PUT:</b> 
-CandidateController: https://localhost:7031/api/Candidate/{id}
-CandidateMicroserviceController: https://localhost:7031/api/CandidateMicroservice/{id} 
-</br>Resquest Body(json):\
+</br>CandidateController: https://localhost:7031/api/Candidate/{id}
+</br>CandidateMicroserviceController: https://localhost:7031/api/CandidateMicroservice/{id} 
+</br><i>Resquest Body(json):\
 {
 "metaid":{{int}},
 "metadate": "{{datetime}}",
@@ -84,8 +83,8 @@ CandidateMicroserviceController: https://localhost:7031/api/CandidateMicroservic
 "State": "{{string}}",
 "Country": "{{string}}",
 "streamid": "{{string}}"
-}
+}</i>
 
 <b>DELETE:</b> 
-CandidateController: https://localhost:7031/api/Candidate/{id}
-CandidateMicroserviceController: https://localhost:7031/api/CandidateMicroservice/{id} 
+</br>CandidateController: https://localhost:7031/api/Candidate/{id}
+</br>CandidateMicroserviceController: https://localhost:7031/api/CandidateMicroservice/{id} 
