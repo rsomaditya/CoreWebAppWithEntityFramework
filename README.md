@@ -33,11 +33,12 @@ D. Test API using POSTMAN</b>
 3. Add "launchUrl": "Candidate" in 'launchsettings.json' under 'profiles.CoreWebAppWithEF' and 'profiles.IIS Express' both.
 4. Once the CandidateController is been implemented rebuild the project and run it.
 
-<b>B) Microservice Implementation:</b>
+<b>C) Microservice Implementation:</b>
 1. Add a new folder named 'Repository' the add an Interface name 'InterfaceCandidateRepo.cs' in that folder. Add the methods in the interface that performs CRUD operations for Candidate microservice.
 2. Add a concrete class named 'CandidateRepo.cs' in the 'Repository' folder to implement all the abstract CRUD methods of 'InterfaceCandidateRepo' interface. Add the implementation for the methods via accessing 'LmsContext' methods.
+3. Once done, add 'builder.Services.AddTransient<InterfaceCandidateRepo, CandidateRepo>()' to dependency injection of repository.
 
-<b>C) Test API using POSTMAN:</b>
+<b>D) Test API using POSTMAN:</b>
 
 Open the Postman Tool. Since my Web API is running at port 7031 with HTTPS protocol, API call URLs will be:
 
