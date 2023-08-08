@@ -45,10 +45,13 @@ D. Test API using POSTMAN</b>
 Open the Postman Tool. Since my Web API is running at port 7031 with HTTPS protocol, API call URLs will be:
 
 <b>GET:</b> 
-https://localhost:7031/api/Candidate 
+CandidateController: https://localhost:7031/api/Candidate 
+CandidateMicroserviceController: https://localhost:7031/api/CandidateMicroservice 
 
-<b>POST:
-</b> https://localhost:7031/api/Candidate
+<b>POST:</b> 
+CandidateController: https://localhost:7031/api/Candidate
+CandidateMicroserviceController: https://localhost:7031/api/CandidateMicroservice 
+
 </br>Resquest Body(json):\
 {
 "metadate": "{{datetime}}",
@@ -65,7 +68,8 @@ https://localhost:7031/api/Candidate
 }
 
 <b>PUT:</b> 
-https://localhost:7031/api/Candidate/{id}
+CandidateController: https://localhost:7031/api/Candidate/{id}
+CandidateMicroserviceController: https://localhost:7031/api/CandidateMicroservice/{id} 
 </br>Resquest Body(json):\
 {
 "metaid":{{int}},
@@ -83,4 +87,5 @@ https://localhost:7031/api/Candidate/{id}
 }
 
 <b>DELETE:</b> 
-https://localhost:7031/api/Candidate/{id}
+CandidateController: https://localhost:7031/api/Candidate/{id}
+CandidateMicroserviceController: https://localhost:7031/api/CandidateMicroservice/{id} 
