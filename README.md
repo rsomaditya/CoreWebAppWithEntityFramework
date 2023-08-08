@@ -1,6 +1,6 @@
 # CoreWebAppWithEF
-Its a Dotnet Core(6) WEB API project using Entity Framework(7) and MS SQL Server(2019). This project is diveided in to four parts:\
-<b>A. Implementing Entity Framework\
+<b>Its a Dotnet Core(6) WEB API project using Entity Framework(7) and MS SQL Server(2019). This project is diveided in to four parts:\
+A. Implementing Entity Framework\
 B. Implementing Web API\
 C. Implementing Microservices\
 D. Test API using POSTMAN</b>
