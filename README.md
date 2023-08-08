@@ -1,8 +1,9 @@
 # CoreWebAppWithEF
-Its a Dotnet Core(6) WEB API project using Entity Framework(7) and MS SQL Server(2019). This project is diveided in to three parts:\
+Its a Dotnet Core(6) WEB API project using Entity Framework(7) and MS SQL Server(2019). This project is diveided in to four parts:\
 <b>A. Implementing Entity Framework\
 B. Implementing Web API\
-C. Test API using POSTMAN</b>
+C. Implementing Microservices\
+D. Test API using POSTMAN</b>
 
 <b>A) First, Entity Framework Implementation:</b>
 
@@ -31,6 +32,10 @@ C. Test API using POSTMAN</b>
 2. Implement the controller for each actions using DB Context class's ('LmsContext.cs') object. Here for all WRITE operation with DB, SaveChanges() shall is been called.
 3. Add "launchUrl": "Candidate" in 'launchsettings.json' under 'profiles.CoreWebAppWithEF' and 'profiles.IIS Express' both.
 4. Once the CandidateController is been implemented rebuild the project and run it.
+
+<b>B) Microservice Implementation:</b>
+1. Add a new folder named 'Repository' the add an Interface name 'InterfaceCandidateRepo.cs' in that folder. Add the methods in the interface that performs CRUD operations for Candidate microservice.
+2. Add a concrete class named 'CandidateRepo.cs' in the 'Repository' folder to implement all the abstract CRUD methods of 'InterfaceCandidateRepo' interface. Add the implementation for the methods via accessing 'LmsContext' methods.
 
 <b>C) Test API using POSTMAN:</b>
 
